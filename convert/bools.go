@@ -1,4 +1,4 @@
-package utils
+package convert
 
 func FromBoolToString(b bool) string {
 	if b {
