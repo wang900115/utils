@@ -24,3 +24,8 @@ func FromStringToBool(s string) bool {
 		return false
 	}
 }
+
+func FromStringToTimeTime(s string) time.Time {
+	val, _ := time.Parse(time.RFC3339, s)
+	return val
+}
