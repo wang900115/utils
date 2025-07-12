@@ -1,6 +1,7 @@
 package convert
 
 import (
+	"strconv"
 	"strings"
 	"time"
 )
@@ -27,5 +28,10 @@ func FromStringToBool(s string) bool {
 
 func FromStringToTimeTime(s string) time.Time {
 	val, _ := time.Parse(time.RFC3339, s)
+	return val
+}
+
+func FromStringToint(s string) int {
+	val, _ := strconv.Atoi(s)
 	return val
 }
