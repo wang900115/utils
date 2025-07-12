@@ -13,3 +13,7 @@ func FromTimestampToTimeTime(t int64) time.Time {
 func FromTimeTimeToTimestamp(t time.Time) int64 {
 	return t.Unix()
 }
+
+func FromTimeTimeToString(t time.Time) string {
+	return t.Format(time.RFC3339)
+}
